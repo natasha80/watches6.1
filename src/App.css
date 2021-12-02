@@ -1,0 +1,125 @@
+.App {
+  width: 1200px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.clocksContainer {
+  width: 240px;
+}
+
+.formClock {
+  width: 600px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inputClock {
+  display: block;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.buttonClock {
+  height: 32px;
+  cursor: pointer;
+}
+
+.clockElement {
+  position: relative;
+  margin: 30px;
+}
+
+.clockTitle {
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+
+.clockButtonDel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.clockBody {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #bdbec0;
+}
+
+.clock-face {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.clock-face:after {
+  content: "";
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 4px;
+  left: -69px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.hour-marker,
+.minute-marker {
+  position: absolute;
+  transform-origin: bottom center;
+}
+
+.hour-marker {
+  width: 1px;
+  height: 74px;
+  background: black;
+}
+
+.clock-arrow {
+  position: absolute;
+  background: white;
+  transform-origin: bottom center;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.clock-arrow__second {
+  width: 1px;
+  height: 65px;
+  background: red;
+  left: calc(50% - (1px/ 2));
+  top: calc(50% - 65px);
+}
+
+.clock-arrow__minute {
+  width: 2px;
+  height: 50px;
+  left: calc(50% - (2px / 2));
+  top: calc(50% - 50px);
+}
+
+.clock-arrow__hour {
+  width: 4px;
+  height: 30px;
+  left: calc(50% - (4px / 2));
+  top: calc(50% - 30px);
+}
